@@ -10,7 +10,7 @@ void input()
     while (true)
     {
         cout << "Masukkan banyaknya elemen pada array (maksimal 10): ";
-        cin >> nPanjang; 
+        cin >> nPanjang;
         if (nPanjang <= 10)
         {
             break;
@@ -19,24 +19,18 @@ void input()
         {
             cout << "\n[!] Jumlah elemen tidak boleh lebih dari 10. Silakan coba lagi.\n";
         }
-    }   
-    
-    
+    }
+
+    cout << "\n======================================\n";
+    cout << "          Masukkan Elemen Array        \n";
+    cout << "=======================================\n";
+    for (int i = 0; i < nPanjang; i++)
+    {
+        cout << "Data ke-" << (i + 1) << " = ";
+        cin >> element[i];
+    }
 }
-
-cout << "\n======================================\n";
-cout << "          Masukkan Elemen Array        \n";
-cout << "=======================================\n";
-for (int i = 0; i < nPanjang; i++)
-{
-    cout << "Data ke-" << (i + 1) << " = ";
-    cin >> element[i];
-}
-
-
-
 
 int main()
 {
-
 }
